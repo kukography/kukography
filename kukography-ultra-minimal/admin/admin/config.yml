@@ -1,0 +1,28 @@
+backend:
+  name: turbo-github
+  turbo_site_id: ba7d86ca-b88a-437f-90e3-7ce0e22f221c
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio"
+    file: "content/portfolio.yml"
+    fields:
+      - label: "Photography"
+        name: "photography"
+        widget: "list"
+        field:
+          label: "Image"
+          name: "image"
+          widget: "image"
+
+      - label: "Graphic Design"
+        name: "design"
+        widget: "list"
+        field:
+          label: "Image"
+          name: "image"
+          widget: "image"
